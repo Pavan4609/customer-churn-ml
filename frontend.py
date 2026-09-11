@@ -244,8 +244,8 @@ if predict_button:
     try:
 
         response = requests.post(
-            "http://127.0.0.1:8000/predict",
-            json=data
+    "https://customer-churn-ml-qcdw.onrender.com/predict",
+    json=data
         )
 
 
@@ -362,10 +362,10 @@ if predict_button:
 
     except requests.exceptions.ConnectionError:
 
-        st.error(
-            "❌ Cannot connect to FastAPI. "
-            "Please make sure Uvicorn is running on port 8000."
-        )
+       st.error(
+    "❌ Cannot connect to the FastAPI server. "
+    "Please try again later."
+)
 
 
 # ---------------- FOOTER ----------------
