@@ -57,4 +57,5 @@ disp.plot()
 
 plt.title("Customer Churn Confusion Matrix")
 plt.tight_layout()
-plt.show()
+plt.savefig("reports/confusion_matrix.png")
+plt.close()
