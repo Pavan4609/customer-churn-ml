@@ -1,25 +1,10 @@
 # Customer Churn Prediction & ML Deployment
 
-An end-to-end Machine Learning project that predicts whether a customer is likely to churn.
+An end-to-end Machine Learning project that predicts whether a customer is likely to churn based on customer, service, contract, and billing information.
 
-## 📌 Project Overview
+## 🚀 Project Overview
 
-Customer churn is an important business problem where companies try to identify customers who may stop using their services.
-
-This project uses Machine Learning to analyze customer information and predict churn probability.
-
-## 🚀 Features
-
-- Customer churn prediction
-- Data preprocessing
-- Missing value handling
-- Categorical feature encoding
-- Random Forest classification
-- Model evaluation
-- Churn probability prediction
-- FastAPI REST API
-- Interactive Swagger API documentation
-- Streamlit web application
+This project uses Machine Learning to predict customer churn and provides a REST API and web interface for real-time predictions.
 
 ## 🛠️ Tech Stack
 
@@ -28,32 +13,83 @@ This project uses Machine Learning to analyze customer information and predict c
 - NumPy
 - Scikit-learn
 - XGBoost
-- Joblib
+- Random Forest
 - FastAPI
-- Uvicorn
 - Streamlit
-- Requests
+- Docker
 - Git & GitHub
+- Render
+- Streamlit Community Cloud
 
-## 🏗️ Project Architecture
+## 🏗️ Architecture
 
-```text
-Customer Dataset
-       ↓
+Dataset
+↓
 Data Preprocessing
-       ↓
+↓
 Feature Engineering
-       ↓
+↓
 Train/Test Split
-       ↓
+↓
 Random Forest Model
-       ↓
+↓
 Model Evaluation
-       ↓
-model.pkl
-       ↓
-FastAPI
-       ↓
-Streamlit Frontend
-       ↓
-Customer Churn Prediction
+↓
+Saved ML Pipeline
+↓
+FastAPI REST API
+↓
+Streamlit Web Interface
+↓
+Docker Deployment
+
+## 📊 Machine Learning
+
+Model: Random Forest Classifier
+
+The preprocessing pipeline includes:
+
+- Missing value handling
+- Numerical feature processing
+- Categorical feature encoding
+- One-Hot Encoding
+- Train/Test Split
+
+Model evaluation is performed using:
+
+- Accuracy
+- Precision
+- Recall
+- F1-Score
+- Classification Report
+
+## ⚡ Features
+
+- Customer churn prediction
+- Churn probability
+- Customer information analysis
+- Billing information analysis
+- REST API using FastAPI
+- Interactive Streamlit interface
+- Docker containerization
+- Cloud deployment
+
+## 🌐 Deployment
+
+### FastAPI
+
+Deployed using Render.
+
+API Documentation:
+https://customer-churn-ml-qcdw.onrender.com/docs
+
+### Streamlit
+
+The Streamlit application provides an interactive interface for entering customer details and receiving churn predictions.
+
+## 🐳 Docker
+
+Build Docker image:
+
+```bash
+docker build -t customer-churn-api .
