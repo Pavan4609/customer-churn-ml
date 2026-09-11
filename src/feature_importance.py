@@ -64,4 +64,4 @@ plt.ylabel("Feature")
 plt.title("Top 15 Feature Importance")
 
 plt.tight_layout()
-plt.show()
+plt.savefig("reports/feature_importance.png")

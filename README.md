@@ -105,6 +105,47 @@ docker build -t customer-churn-api .
   - Confusion Matrix
 
 ## 📈 Exploratory Data Analysis
+## 📊 EDA Visualizations
+
+### Customer Churn Distribution
+
+![Customer Churn Distribution](reports/churn_distribution.png)
+
+### Monthly Charges Distribution
+
+![Monthly Charges Distribution](reports/monthly_charges.png)
+
+### Customer Tenure Distribution
+
+![Customer Tenure Distribution](reports/tenure_distribution.png)
+
+### Churn by Contract Type
+
+![Churn by Contract](reports/churn_by_contract.png)
+
+### Churn by Internet Service
+
+![Churn by Internet Service](reports/churn_by_internet_service.png)
+
+### Churn by Payment Method
+
+![Churn by Payment Method](reports/churn_by_payment_method.png)
+
+### Monthly Charges vs Churn
+
+![Monthly Charges vs Churn](reports/monthly_charges_vs_churn.png)
+
+### Tenure vs Churn
+
+![Tenure vs Churn](reports/tenure_vs_churn.png)
+
+### Correlation Heatmap
+
+![Correlation Heatmap](reports/correlation_heatmap.png)
+
+### Feature Importance
+
+![Feature Importance](reports/feature_importance.png)
 
 The project includes EDA for:
 
