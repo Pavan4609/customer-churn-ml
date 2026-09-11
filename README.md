@@ -93,3 +93,33 @@ Build Docker image:
 
 ```bash
 docker build -t customer-churn-api .
+## 📊 Model Evaluation
+
+- Accuracy: 78%
+- Algorithm: Random Forest Classifier
+- Evaluation Metrics:
+  - Accuracy
+  - Precision
+  - Recall
+  - F1-Score
+  - Confusion Matrix
+
+## 📈 Exploratory Data Analysis
+
+The project includes EDA for:
+
+- Customer Churn Distribution
+- Monthly Charges Distribution
+- Tenure Distribution
+- Categorical Feature Analysis
+
+## ⭐ Feature Importance
+
+Feature importance analysis is performed using the trained Random Forest model to identify the most influential factors affecting customer churn.
+
+## 🐳 Docker
+
+Build the Docker image:
+
+```bash
+docker build -t customer-churn-api .
